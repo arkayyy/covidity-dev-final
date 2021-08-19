@@ -1,0 +1,26 @@
+.oxy__form{
+    float:left;
+    background-color: #1FAA59;
+    height:auto;
+    margin:100px;
+    border-radius: 10px;
+    display: flex;
+    
+
+}
+
+.buttn1{
+    color: black; 
+}
+
+.search{
+    float:right;
+    margin: 100px;
+    border-radius: 10px;
+    display: flex;
+    padding: 30px;
+}
+
+.btn2{
+    margin-top: 20px;
+}

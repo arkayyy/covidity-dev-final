@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+.support__oxygen__request{
+    height: auto;
+    background-color: burlywood;
+    margin: 20px;
+    width: 700px;
+    
+}
+
+.button1{
+    transition-duration: 0.4s;
+}
+
+.button1:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+.dropdown_text{
+    font-family:Krona One, "sans-serif" !important;
+}
+
+.supportOxygen__body{
+    padding-bottom: 200px;
+}
+
+.ques_wrapper_1{
+    margin-left: 50px;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+

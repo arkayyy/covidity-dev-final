@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+.donate__heading__text{
+    color:black;
+    font-family:Krona One, "sans-serif";
+    font-size: 40px;
+    font-weight: 900;
+    
+}
+
+.donate__heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:30px;
+    margin-top: 5vh;
+}
+
+
+
+.donate__card{
+    height: 100px;
+    width: 350px;
+    background-color: #ff3000;
+    margin:20px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    
+}
+
+.donate__card__text{
+    font-family:Krona One, "sans-serif";
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.donate__cascade{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate__image{
+    position: absolute;
+}

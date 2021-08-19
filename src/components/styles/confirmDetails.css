@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+.userDetails__body {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top:50%;
+}
+
+.field{
+    border: 2px black solid;
+    width: 300px;
+    margin: 5px;
+    height: 100px;
+}
+
+
+.userDetails_fields{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.field_text{
+    font-family:Krona One, "sans-serif";
+}
+
+.donation_fields{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

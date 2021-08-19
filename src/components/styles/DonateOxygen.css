@@ -1,0 +1,81 @@
+.nice-dates-navigation,
+.nice-dates-day {
+  color: #111;
+}
+.nice-dates-popover {
+  box-shadow: none;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  max-width: 480px;
+  transition: none;
+}
+
+.donate__form {
+  float: left;
+  background-color: #85C3FF;
+  height: auto;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.buttn1 {
+  color: black;
+  transition-duration: 0.4s;
+}
+
+.buttn1:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.search {
+  float: right;
+  margin: 100px;
+  border-radius: 10px;
+  display: flex;
+  padding: 30px;
+}
+
+.btn2 {
+  margin-top: 20px;
+}
+
+.calendar {
+  width: "200px";
+}
+
+.otp_modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.otp_modal_header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.otp_modal_header_text {
+  flex: 0.98;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.otp_modal_close_icon {
+  max-width: 40px;
+  height: 40px;
+
+  flex: 0.02;
+}
+
+.otp_modal_close_icon:hover {
+  cursor: pointer;
+}
+
+
+

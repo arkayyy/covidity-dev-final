@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+.vaccination{
+    display: flex;
+    flex-direction: column;
+}
+
+.vaccination__body{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.vaccination__body__left{
+    flex: 0.5;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+}
+.vaccination__body__right{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vaccination__header{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+.vaccination__header__text{
+    margin: 40px;
+    font-family:Krona One, "sans-serif";
+    font-size:50px;
+    font-weight: 800;
+}
+
+.vaccine_img{
+    max-width: 60%;
+}
+
+.selectRadio{
+    height: 20px;
+    width: 20px;
+    border-radius:50%;
+    margin: 10px;
+    border: 2px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appointment_choice_slider{
+    display: flex;
+    flex-direction: row;
+}
+
+.selectRadio_selector{
+    height: 70%;
+    width: 70%;
+    background-color: black;
+    border-radius: 50%;
+}
+

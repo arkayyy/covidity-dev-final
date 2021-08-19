@@ -1,0 +1,60 @@
+.forum__body1 {
+  display: flex;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width:90%;
+  flex:0.7;
+  
+}
+
+.forum__body2 {
+  flex:0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+}
+
+
+
+.card{
+  position: relative;
+  
+  height: 400px;
+  box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
+              inset -5px -5px 15px rgba(255,255,255,0.1),
+              5px 5px 15px rgba(0,0,0,0.3),
+              -5px -5px 15px rgba(255,255,255,0.1);
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.box{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  {/*border: #85C3FF;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;*/}
+  
+}
+.title{
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 4px solid #85C3FF;
+  border-radius: 15px;
+}
+
+

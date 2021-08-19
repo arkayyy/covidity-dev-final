@@ -1,0 +1,35 @@
+.food__form{
+    float: left;
+    background-color: #E8BD0D;
+    height:auto;
+    margin:100px;
+    border-radius: 10px;
+}
+
+.occupations__title{height: 40px;
+    width:300px;
+    background-color: white;
+    border-radius: 5px;
+    
+    z-index: 1000;
+    margin:10px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.occupations__title:hover{
+    cursor: pointer;
+}
+
+.occupations__dropdown{
+    height: 20vh;
+    background-color: white;
+    
+    
+    width:300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
