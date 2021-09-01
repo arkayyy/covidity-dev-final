@@ -1,0 +1,29 @@
+{
+  "name": "CovidityBackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "axios-observable": "^1.1.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "hash-generator": "^0.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.8",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.6.0",
+    "nodemon": "^2.0.7",
+    "otp-generator": "^2.0.0",
+    "rxjs": "^7.0.1"
+  }
+}

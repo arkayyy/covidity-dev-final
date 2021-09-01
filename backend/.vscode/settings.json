@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/e2becbb0-7deb-4fc8-8efb-8d17991d472c/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/covidity-server",
+    "appService.deploySubpath": "."
+}
