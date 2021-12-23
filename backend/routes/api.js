@@ -25,9 +25,6 @@ router.get('/',(req,res)=>{
     })
 });
 
-router.get('/rk',(req,res)=>{
-    res.json({"id": "JAA MAR JAA BC"})
-})
 
 
 router.post('/save',(req,res)=>{
