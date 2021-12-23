@@ -36,7 +36,9 @@ import {validateToken} from './redux/index'
 import {connect} from 'react-redux'
 import SignInSignUpComp from "./components/SignInSignUpComp";
 import SignInOrHome from './components/SignInOrHome'
+import LoginPage from "./components/LoginPage";
 import CowinScreen from './components/CowinScreen'
+import UserProfile from "./components/UserProfile";
 //import SignInSignUpComp from './components/SignInSignUpComp'
 
 //const store=createStore(allReducers,composeWithDevTools(applyMiddleware(thunk)));
@@ -67,9 +69,10 @@ function App() {
           <Route path="/donate_blood" exact component={DonateBlood} />
           <Route path="/donate_food" exact component={DonateFood} />
           <Route path="/mongo" exact component={MongoTrial} />
-          <Route path="/signin" exact component={SignInOrHome} />
+          <Route path="/signin" exact component={LoginPage} />
           <Route path="/forum" exact component={ForumPage} />
           <Route path="/maps" exact component={MapComponent} />
+          <Route path ="/user-profile" exact component={UserProfile}/>
           {/* <Route path="/book-vaccine-slot" exact component={CowinScreen} /> */}
 
         </Switch>

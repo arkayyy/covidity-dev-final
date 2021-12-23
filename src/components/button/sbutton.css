@@ -1,0 +1,16 @@
+.button_small{
+    height:50px;
+    width: 200px;
+    background-color: #ff3000;
+    /* margin:20px; */
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    
+}
+
+.button_small:hover{
+    cursor: pointer;
+}

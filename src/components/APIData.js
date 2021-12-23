@@ -1,41 +1,41 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-function APIData() {
-    var states=[];
+// function APIData() {
+//     var states=[];
 
-    const[apiOutput,setAPIOutput]=useState(null);
+//     const[apiOutput,setAPIOutput]=useState(null);
 
-    var request = require('request');
+//     var request = require('request');
 
-                var headers = {
-                    'accept': 'application/json',
-                    // 'Accept-Language': 'en_US'
-                };
+//                 var headers = {
+//                     'accept': 'application/json',
+//                     // 'Accept-Language': 'en_US'
+//                 };
 
-                var options = {
-                    url: 'https://cdn-api.co-vin.in/api/v2/admin/location/states',
-                    headers: headers
-                };
+//                 var options = {
+//                     url: 'https://cdn-api.co-vin.in/api/v2/admin/location/states',
+//                     headers: headers
+//                 };
 
-                function callback(error, response, body) {
-                    if (!error && response.statusCode == 200) {
-                        states=((JSON.parse(body))["states"]);
-                        setAPIOutput(states);
-                        //console.log(states);
-                        }
-                    } 
+//                 function callback(error, response, body) {
+//                     if (!error && response.statusCode == 200) {
+//                         states=((JSON.parse(body))["states"]);
+//                         setAPIOutput(states);
+//                         //console.log(states);
+//                         }
+//                     } 
                     
 
-                request(options, callback);
+//                 request(options, callback);
 
-                // console.log(states);
+//                 // console.log(states);
 
 
-    return (
-        <div>
+//     return (
+//         <div>
             
-        </div>
-    )
-}
+//         </div>
+//     )
+// }
 
-export default APIData
+// export default APIData
