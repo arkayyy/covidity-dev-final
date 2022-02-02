@@ -1,0 +1,96 @@
+{
+  "status": "ok",
+  "totalResults": 9,
+  "articles": [
+    {
+      "source": { "id": "nbc-news", "name": "NBC News" },
+      "author": "Erika Edwards",
+      "title": "Omicron symptoms: What new Covid variant research shows us so far - NBC News",
+      "description": "Omicron variant symptoms may be different than previous Covid strains. Learn what you should know about Omicron symptoms and what to look out for.",
+      "url": "https://www.nbcnews.com/health/health-news/omicron-symptoms-covid-what-to-know-rcna9469",
+      "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2021-12/211222-covid-test-mn-1100-83137e.jpg",
+      "publishedAt": "2021-12-22T16:05:00Z",
+      "content": "The dizzying speed of omicron's spread has left Americans questioning much of what they know about Covid-19, especially on the cusp of holiday travel. \r\n\"This is hitting us at a very inopportune time… [+7057 chars]"
+    },
+    {
+      "source": { "id": "independent", "name": "Independent" },
+      "author": "Shweta Sharma",
+      "title": "US Army claims it is close to developing vaccine against all Covid variants and coronaviruses - The Independent",
+      "description": "Army-developed SpFN vaccine completed phase 1 of human trials earlier this year",
+      "url": "https://www.independent.co.uk/news/world/americas/covid-vaccine-omicron-variants-us-army-b1980687.html",
+      "urlToImage": "https://static.independent.co.uk/2021/12/22/04/GettyImages-1210622063.jpg?width=1200&auto=webp&quality=75",
+      "publishedAt": "2021-12-22T15:38:32Z",
+      "content": "The US Department of Defence (DOD) is just weeks away from announcing a vaccine that can fight against Covid-19, including the Omicron and Delta variants, and other coronaviruses that have killed mil… [+2155 chars]"
+    },
+    {
+      "source": { "id": "reuters", "name": "Reuters" },
+      "author": null,
+      "title": "S.African study offers Omicron hope as nations reimpose curbs - Reuters",
+      "description": "A South African study offered Christmas glad tidings about the severity of Omicron and the trend of COVID-19 infections on Wednesday as the fast-spreading coronavirus variant forced countries across the world to impose new curbs.",
+      "url": "https://www.reuters.com/world/the-great-reboot/omicrons-march-revives-urgent-global-calls-vaccinations-2021-12-22/",
+      "urlToImage": "https://www.reuters.com/resizer/WEdaFkp_npEwX4RLWWKUSpWHPPU=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/ZYEZT5IZEBNYHPP6MFK32EN4LQ.jpg",
+      "publishedAt": "2021-12-22T15:05:00Z",
+      "content": "JOHANNESBURG, Dec 22 (Reuters) - A South African study offered Christmas glad tidings about the severity of Omicron and the trend of COVID-19 infections on Wednesday as the fast-spreading coronavirus… [+5594 chars]"
+    },
+    {
+      "source": { "id": "cnn", "name": "CNN" },
+      "author": "Aya Elamroussi, CNN",
+      "title": "Finding a Covid-19 test is a struggle right now in the US as Omicron and holiday plans collide - CNN",
+      "description": "With coronavirus cases surging once again, frustrated Americans are struggling to get tested days before Christmas as long lines and increased demand overwhelm some facilities across the country.",
+      "url": "https://www.cnn.com/2021/12/22/health/us-coronavirus-wednesday/index.html",
+      "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/211222003156-01-covid-home-test-kit-12212021-restricted-super-tease.jpg",
+      "publishedAt": "2021-12-22T13:58:00Z",
+      "content": "(CNN)With coronavirus cases surging once again, frustrated Americans are struggling to get tested days before Christmas as long lines and increased demand overwhelm some facilities across the country… [+7739 chars]"
+    },
+    {
+      "source": { "id": null, "name": "WLS-TV" },
+      "author": "Evelyn Holmes",
+      "title": "Mayor Lightfoot announces new Chicago COVID restrictions: Proof of vaccine, testing indoors - WLS-TV",
+      "description": "Chicago Mayor Lori Lightfoot announced new COVID restrictions Tuesday, with proof of vaccination or negative test for restaurants and gyms.",
+      "url": "https://abc7chicago.com/chicago-covid-mandate-restrictions-news-update/11370043/",
+      "urlToImage": "https://cdn.abcotvs.com/dip/images/11370126_122221-wls-vax-req-img.jpg?w=1600",
+      "publishedAt": "2021-12-22T11:26:15Z",
+      "content": "CHICAGO (WLS) -- The city of Chicago is imposing a wide-ranging vaccine mandate that will affect bars, restaurants, gyms and more after the first of the year.Mayor Lori Lightfoot announced the new re… [+7057 chars]"
+    },
+    {
+      "source": { "id": null, "name": "CNBC" },
+      "author": "Elliot Smith",
+      "title": "UK shortens Covid-19 isolation period to 7 days in England - CNBC",
+      "description": "The British government has shortened the mandatory Covid-19 self-isolation period in England from 10 days to seven days.",
+      "url": "https://www.cnbc.com/2021/12/22/uk-shortens-covid-19-isolation-period-to-7-days-in-england.html",
+      "urlToImage": "https://image.cnbcfm.com/api/v1/image/106963315-1634747963601-gettyimages-1236004227-63187431.jpeg?v=1637874849",
+      "publishedAt": "2021-12-22T11:11:40Z",
+      "content": "LONDON The British government has shortened the mandatory Covid-19 self-isolation period in England from 10 days to seven days for those who get negative lateral flow tests on two consecutive days.\r\n… [+2891 chars]"
+    },
+    {
+      "source": { "id": null, "name": "BBC News" },
+      "author": "https://www.facebook.com/bbcnews",
+      "title": "Covid-19: Israel plans to give fourth dose of vaccine to over-60s - BBC News",
+      "description": "A second booster would be offered to over-60s and medics as Israel prepares for an Omicron wave.",
+      "url": "https://www.bbc.com/news/world-middle-east-59749967",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/EAB5/production/_122358006_israel.jpg",
+      "publishedAt": "2021-12-22T11:01:38Z",
+      "content": "Image source, Getty Images\r\nImage caption, An expert panel has recommended giving a fourth vaccine dose to health workers and those over 60\r\nA government panel of experts in Israel has recommended a … [+3054 chars]"
+    },
+    {
+      "source": { "id": "bloomberg", "name": "Bloomberg" },
+      "author": null,
+      "title": "Omicron Could Triple Covid Infection Risk on Flights: IATA Adviser - Bloomberg",
+      "description": null,
+      "url": "https://www.bloomberg.com/tosv2.html?vid=&uuid=1b77aea5-62f4-11ec-822c-754268506c79&url=L25ld3MvYXJ0aWNsZXMvMjAyMS0xMi0yMi9vbWljcm9uLWF0LWxlYXN0LWRvdWJsZXMtcmlzay1vZi1nZXR0aW5nLWluZmVjdGVkLW9uLWEtcGxhbmU=",
+      "urlToImage": null,
+      "publishedAt": "2021-12-22T04:28:00Z",
+      "content": "To continue, please click the box below to let us know you're not a robot."
+    },
+    {
+      "source": { "id": null, "name": "New York Post" },
+      "author": "Kenneth Garger",
+      "title": "Trump 'very appreciative' of Biden's praise for Operation Warp Speed - New York Post ",
+      "description": "Former President Donald Trump was “very appreciative” and “surprised” that President Biden publicly credited his administration’s role in helping to deliver the COVID-19 vaccine to Americans.…",
+      "url": "https://nypost.com/2021/12/21/trump-very-appreciative-of-bidens-praise-for-operation-warp-speed/",
+      "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2021/12/trump-appreciative-index.jpg?quality=90&strip=all&w=1024",
+      "publishedAt": "2021-12-22T02:29:00Z",
+      "content": "Former President Donald Trump was very appreciative and surprised that President Biden publicly credited his administrations role in helping to quickly deliver the COVID-19 vaccine to the American pe… [+1659 chars]"
+    }
+  ]
+}
