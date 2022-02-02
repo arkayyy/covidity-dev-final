@@ -7,7 +7,7 @@ import Modal from 'react-modal'
 import {validateToken} from '../redux/index'
 import {connect} from 'react-redux'
 
-import withFirebaseAuth from 'react-with-firebase-auth'
+
 import * as firebase from 'firebase/app';
 import {getAuth, onAuthStateChanged} from 'firebase/auth';
 import firebaseConfig from '../firebase/config'

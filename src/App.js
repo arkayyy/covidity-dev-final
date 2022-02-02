@@ -38,11 +38,8 @@ import SignInSignUpComp from "./components/SignInSignUpComp";
 import SignInOrHome from './components/SignInOrHome'
 import LoginPage from "./components/LoginPage";
 import CowinScreen from './components/CowinScreen'
-<<<<<<< HEAD
-import resources from "./resources/resources";
-=======
 import UserProfile from "./components/UserProfile";
->>>>>>> 6295f332b14bd1faecc8019635bbfb22238dbff3
+import resources from "./resources/resources";
 //import SignInSignUpComp from './components/SignInSignUpComp'
 
 //const store=createStore(allReducers,composeWithDevTools(applyMiddleware(thunk)));
@@ -76,11 +73,7 @@ function App() {
           <Route path="/signin" exact component={LoginPage} />
           <Route path="/forum" exact component={ForumPage} />
           <Route path="/maps" exact component={MapComponent} />
-<<<<<<< HEAD
           <Route path="/resources" exact component={resources} />
-=======
-          <Route path ="/user-profile" exact component={UserProfile}/>
->>>>>>> 6295f332b14bd1faecc8019635bbfb22238dbff3
           {/* <Route path="/book-vaccine-slot" exact component={CowinScreen} /> */}
 
         </Switch>
