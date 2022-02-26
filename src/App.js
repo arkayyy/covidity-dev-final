@@ -41,6 +41,9 @@ import CowinScreen from './components/CowinScreen'
 import UserProfile from "./components/UserProfile";
 
 import {useAuth0} from '@auth0/auth0-react'
+
+import resources from "./resources/resources";
+
 //import SignInSignUpComp from './components/SignInSignUpComp'
 
 //const store=createStore(allReducers,composeWithDevTools(applyMiddleware(thunk)));
@@ -76,7 +79,8 @@ function App() {
           <Route path="/signin" exact component={LoginPage} />
           <Route path="/forum" exact component={ForumPage} />
           <Route path="/maps" exact component={MapComponent} />
-          <Route path ="/user-profile" exact component={UserProfile}/>
+          <Route path="/resources" exact component={resources} />
+          <Route path="/user-profile" exact component={UserProfile}/>
           {/* <Route path="/book-vaccine-slot" exact component={CowinScreen} /> */}
 
         </Switch>
