@@ -39,12 +39,16 @@ import SignInOrHome from './components/SignInOrHome'
 import LoginPage from "./components/LoginPage";
 import CowinScreen from './components/CowinScreen'
 import UserProfile from "./components/UserProfile";
+
+import {useAuth0} from '@auth0/auth0-react'
 //import SignInSignUpComp from './components/SignInSignUpComp'
 
 //const store=createStore(allReducers,composeWithDevTools(applyMiddleware(thunk)));
 
 function App() {
   //const statesList=useSelector(state=>state.states);
+
+  const {loginWithPopup,loginWithRedirect,logout,user, isAuthenticated} = useAuth0()
   return (
     
     <Router>

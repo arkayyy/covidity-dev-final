@@ -2,39 +2,50 @@ import React,{useState} from 'react'
 
 import Header from './Header';
 
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signInWithRedirect } from "firebase/auth";
 import './styles/LoginPage.css'
 import { useEffect } from 'react';
+import { initializeApp } from 'firebase/app';
+import firebaseConfig from '../firebase/config';
+
+import {useAuth0} from '@auth0/auth0-react'
 
 function LoginPage() {
+
+    const {loginWithPopup,loginWithRedirect,logout,user, isAuthenticated} = useAuth0()
+
     const [usernameField, setUsernameField] = useState('');
     const [fullNameField, setFullNameField] = useState('');
     const [emailField, setEmailField] = useState('');
     const [passwordField, setPasswordField] = useState('');
     const [confirmPasswordField, setConfirmPasswordField] = useState('');
 
+
+
     const [loggedIn,setLoggedIn] = useState(false);
 
 
 
-
-    const auth = getAuth();
-    const provider = new GoogleAuthProvider();
+    const app = initializeApp(firebaseConfig)
+    //const auth = getAuth();
+    
     
     
     useEffect(()=>{
+        const auth = getAuth();
         onAuthStateChanged(auth, (user) => {
             if (user) {
               // User is signed in, see docs for a list of available properties
               // https://firebase.google.com/docs/reference/js/firebase.User
               const uid = user.displayName;
               setLoggedIn(true);
-
+                console.log("Logged in")
               window.location.replace('/');
               // ...
             } else {
               // User is signed out
               // ...
+
               setLoggedIn(false);
             }
           });
@@ -44,8 +55,10 @@ function LoginPage() {
     
 
     const googleSignInClick=()=>{
-        
-        signInWithPopup(auth, provider)
+        console.log("HI")
+        const auth = getAuth();
+        const provider = new GoogleAuthProvider();
+        signInWithRedirect(auth, provider)
         .then((result) => {
             // This gives you a Google Access Token. You can use it to access the Google API.
             const credential = GoogleAuthProvider.credentialFromResult(result);
@@ -53,7 +66,6 @@ function LoginPage() {
             // The signed-in user info.
             const user = result.user;
             // ...
-            console.log(user)
         }).catch((error) => {
             // Handle Errors here.
             const errorCode = error.code;
@@ -63,7 +75,25 @@ function LoginPage() {
             // The AuthCredential type that was used.
             const credential = GoogleAuthProvider.credentialFromError(error);
             // ...
+            console.log(errorMessage)
         });
+        // onAuthStateChanged(auth, (user) => {
+        //     if (user) {
+        //       // User is signed in, see docs for a list of available properties
+        //       // https://firebase.google.com/docs/reference/js/firebase.User
+        //       const uid = user.displayName;
+        //       setLoggedIn(true);
+        //         console.log("Logged in")
+        //       window.location.replace('/');
+        //       // ...
+        //     } else {
+        //       // User is signed out
+        //       // ...
+
+        //       setLoggedIn(false);
+        //     }
+        //   });
+
     }
 
     
@@ -127,7 +157,7 @@ function LoginPage() {
                 <form action="#" className="formsss" >
                     <h1 className="h1sss" style={{fontFamily:"Krona One,sans-serif"}}>Sign in</h1>
                     <div class="social-container">
-                        <a href="#" className="social69" onClick={googleSignInClick}><img src="https://img.icons8.com/ios-filled/30/000000/google-logo.png"/></a>
+                        <a href="#" className="social69" onClick={loginWithPopup}><img src="https://img.icons8.com/ios-filled/30/000000/google-logo.png"/></a>
                         <a href="#" className="social69" ><img src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png"/></a>
                         <a href="#" className="social69"><img src="https://img.icons8.com/ios-filled/30/000000/microsoft.png"/></a>
                     </div>
