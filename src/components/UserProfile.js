@@ -64,7 +64,7 @@ function UserProfile() {
 
 
     const signOutUser=()=>{
-        logout()
+        logout({returnTo:"https://covi-dity.netlify.app/"})
     }
 
     return (<>{user?(<div style={{fontFamily:"Krona One,sans-serif"}}>
