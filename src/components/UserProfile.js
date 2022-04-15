@@ -17,7 +17,7 @@ import { useEffect } from 'react'
 
 function UserProfile() {
 
-  const {loginWithPopup,loginWithRedirect,logout,user, isAuthenticated} = useAuth0()
+  const {loginWithPopup,loginWithRedirect,logout,user, isAuthenticated, isLoading} = useAuth0()
 
 
     const [loggedIn, setLoggedIn] = useState(false);
@@ -67,7 +67,7 @@ function UserProfile() {
         logout({returnTo:window.location.origin})
     }
 
-    return (<>{user?(<div style={{fontFamily:"Krona One,sans-serif"}}>
+    return (<>{!isLoading?(<>{isAuthenticated?(<div style={{fontFamily:"Krona One,sans-serif"}}>
 
     <div className='section1_header'><Header/></div>
     <div className='section1_title' style={{display:"flex", justifyContent:"center", marginTop:"2%"}}><h1>USER PROFILE</h1></div>
@@ -97,7 +97,7 @@ function UserProfile() {
             <div style={{display:"flex", justifyContent:"center"}}><div style={{margin:"10px"}}><a onClick={signOutUser}><Sbutton text={"SIGN OUT"}/></a></div></div>
         </div>
     </div>
-</div>):(<>LOADING...</>)}</>
+</div>):(<>{loginWithRedirect()}</>)}</>):(<div style={{display:"flex", flexDirection:"column", alignItems:"center"}}><div style={{ display:"flex",flexDirection:"column", alignItems:"center", paddingTop:"18%"}}><img src="load-med.svg"/></div></div>)}</>
         
     )
 }

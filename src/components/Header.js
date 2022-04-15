@@ -19,7 +19,7 @@ const auth = getAuth();
 
 function Header({doValidateToken}) {
 
-    const {loginWithPopup,loginWithRedirect,logout,user, isAuthenticated} = useAuth0()
+    const {loginWithPopup,loginWithRedirect,logout,user, isAuthenticated, isLoading} = useAuth0()
 
     const [cookies, setCookie,removeCookie] = useCookies(['user']);
     const [logOutConfirm,setLogOutConfirm]=useState(false)
@@ -68,7 +68,7 @@ function Header({doValidateToken}) {
                 <a href="forum" style={style_header_link}>FORUMS</a>
                 <a href="resources" style={style_header_link}>RESOURCES</a>
                 {/* {loggedIn?(<><a href="user-profile" style={{display:"flex"}}><p style={style_header_link}>{currUserDispName}</p><img style={{width:"30px",height:"30px",borderRadius:"50%",marginTop:"-3px",marginLeft:"-25px",padding:"0px"}} src={userImgUrl} alt="profile photo"/></a></>):(<><a href="signin" style={style_header_link}>SIGN IN</a></>)} */}
-                {isAuthenticated?(<><a href="user-profile" style={{display:"flex"}}><p style={style_header_link}>{user.given_name}</p><img style={{width:"30px",height:"30px",borderRadius:"50%",marginTop:"-3px",marginLeft:"-25px",padding:"0px"}} src={user.picture} alt="profile photo"/></a></>):(<><a href="signin" style={style_header_link}>SIGN IN</a></>)}
+                {isLoading?(<><img style={{width:"30px", marginLeft:"10px"}} src="load-vsmall.svg"/></>):(<>{isAuthenticated?(<><a href="user-profile" style={{display:"flex"}}><p style={style_header_link}>{user.given_name}</p><img style={{width:"30px",height:"30px",borderRadius:"50%",marginTop:"-3px",marginLeft:"-25px",padding:"0px"}} src={user.picture} alt="profile photo"/></a></>):(<><a style={style_header_link} onClick={loginWithRedirect}>SIGN IN</a></>)}</>)}
                 {/* {usernameCurrent?(<a style={style_header_link} onClick={()=>{setLogOutConfirm(true)}}>{usernameCurrent}</a>):(<a href="signin" style={style_header_link}>SIGN IN</a>)} */}
 
             </div>

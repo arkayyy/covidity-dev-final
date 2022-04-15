@@ -9,13 +9,15 @@ import Lottie from 'react-lottie'
 import errorAnimation from '../images/errorAnimation.json'
 import ForumPosts from './ForumPosts'
 import axios from 'axios'
+import { useAuth0 } from '@auth0/auth0-react'
+
 
 
 //import './styles/Forum.css'
 
 
 function ForumPage({sendNewPost,insertionIds,posts,getPosts}) {
-
+    const {loginWithPopup,loginWithRedirect,logout,user, isAuthenticated, isLoading} = useAuth0()
     const style_survey_text={ color:"#23374D", fontFamily:"Krona One, sans-serif", fontSize:"14px"}
     const [modalOpen, setmodalOpen] = useState(false)
     const [newPostContent,setNewPostContent]=useState("")
@@ -81,7 +83,7 @@ const submitPost=()=>{
 
     return (
         <>
-        {cookies.usernameCovidity || cookies.emailCovidity?(
+        {isAuthenticated?(
         
     
         <div> 
@@ -138,7 +140,7 @@ const submitPost=()=>{
             
               }
 
-        </div>):(<SignInSignUpComponent/>) }
+        </div>):(<>{isLoading?(<div style={{display:"flex", flexDirection:"column", alignItems:"center"}}><div style={{ display:"flex",flexDirection:"column", alignItems:"center", paddingTop:"18%"}}><img src="load-med.svg"/></div></div>):(<>{loginWithRedirect()}</>)}</>) }
         
         </>
     )
